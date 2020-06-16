@@ -1,0 +1,9 @@
+body {
+  font-family: sans-serif;
+}
+
+video {
+	max-width: 100%;
+	width: 640px;
+}
+#webrtcIndicator { display: none !important; }

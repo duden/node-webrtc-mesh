@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>View as Team - Test</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">View as Team</h1>
+    <p class="lead">This is a WebRTC Powered Site which let you share your Gameplay with Friends in realtime.</p>
+	<p id="roomPara"class="lead">You are not in a Room:</p>
+	<p id="clientsPara" class="lead">also without Friends</p>
+  </div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-sm">
+			<video id="remoteVideo0"autoplay playsinline></video>
+		</div>
+		<div class="col-sm">
+			<video id="remoteVideo1"autoplay playsinline></video>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<video id="remoteVideo2"autoplay playsinline></video>
+		</div>
+		<div class="col-sm">
+			<video id="remoteVideo3"autoplay playsinline></video>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm">
+			<video id="localVideo"autoplay playsinline></video>
+		</div>
+		<div class="col-sm">
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button id="startButton" type="button" class="btn btn-secondary">Get Screen</button>
+				<button id="enterButton" type="button" class="btn btn-secondary" disabled>Enter Room</button>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
